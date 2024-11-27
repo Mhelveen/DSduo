@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <title>DSduo</title>
+    <link rel="icon" href="images/icon.png" type="image/png">
+</head>
+<body>
+    <canvas id="gradient-canvas" data-transition-in></canvas>
+
+    <nav>
+        <div class="nav-container">
+            <a class="logo" data-aos="zoom-in" data-aos-duration="500">
+                <img src="images/DSduo.png" alt="DSduo" style="width:50px"><span>DSduo</span>
+            </a>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100"><a href="#section1">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200"><a href="#section2">Work</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"><a href="#section3">About us</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400"><a href="#section4">Contact</a></div>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#section1">Home</a>
+                <a href="#section2">Work</a>
+                <a href="#section3">About us</a>
+                <a href="#section4">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="section1" class="slideshow">
+        <div class="slide fade">
+            <div class="slide-content">
+                <img src="images/DSduo.png" alt="DSduo" class="slide-image" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="vertical-line" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300"></div>
+                <div class="text-content">
+                    <h2 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">We are DSduo</h2>
+                    <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">A portfolio collaboration for technical creativity. <span>Welcome to our portfolio!</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="slide fade">
+            <div class="slide-content serrano">
+                <img src="images/mhelvs.png" alt="DSduo" class="image" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="slide-1-2-content">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">Mhelveen Serrano</h1>
+                    <h2 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500" class="typewriter">Layout Artist & Web Developer</h2>
+                    <div class="social-links">
+                        <a data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1100"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide fade">
+            <div class="slide-content dadiz">
+                <div class="slide-1-2-content">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">John Louie Dadiz</h1>
+                    <h2 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500" class="typewriter">Video Editor & Layout Artist</h2>
+                    <div class="social-links">
+                        <a data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1100"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <img src="images/luwi.png" alt="DSduo" class="image" data-aos="zoom-in" data-aos-duration="1000">
+            </div>
+        </div>
+    </section>
+    <section id="section2">
+        <h1>What We Do</h1>
+        <div class="quote"></div>
+        <div class="section2"> 
+            <div class="services"> 
+                <div class="service"> 
+                    <h2><img src="images/Layout.png" alt="Layout Icon"> Layout</h2> 
+                    <p>Effectively form and organize material to improve readability, visual appeal, and overall satisfaction with the content.</p> 
+                </div> 
+                <div class="service service1"> 
+                    <h2><img src="images/Video Edit.png" alt="Video Edit Icon"> Video Edit</h2> 
+                    <p>Expert editing and transformation of initial footage into flawless, compelling videos that engage and impress the viewers.</p> 
+                </div> 
+                <div class="service"> 
+                    <h2><img src="images/Design.png" alt="Design Icon"> Design</h2> 
+                    <p>Creatively designing and producing unique, visually appealing solutions that effectively communicate your organization's distinct identity and mission. </p> 
+                </div> 
+                <div class="service service1"> 
+                    <h2><img src="images/Manage.png" alt="Manage Icon"> Manage</h2> 
+                    <p>Strategic management involves assuring efficient project coordination, resource allocation, and planning in order to achieve successful outcomes and client satisfaction.</p> 
+                </div> 
+            </div> 
+        </div>
+    </section>
+    <section id="section3">
+        <h1>Sample Works</h1>
+        <div class="quote"></div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/1.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/2.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/3.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/4.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/5.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/Add a heading (Instagram Post).png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/BOOWAN NG WIKAIN.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/Aperture Template.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/Congratulations.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/COUNTDOWN.png" alt="">
+              </div>
+            </div>
+          </div>
+    </section>
+    <section id="section4">
+        <div class="footer">
+            <div class="footer-text">
+                <h2 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">Let’s work</h2>
+                <h3 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">together</h3>
+            </div>
+            <img src="images/DSduopic.png" alt="DSduo" class="footer-image" data-aos="fade-left" data-aos-duration="1000">
+        </div>
+        <div class="footer-line" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"></div>
+    </section>
+    <script src="aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script type="module">
+        import { Gradient } from './Gradient.js';
+
+        const gradient = new Gradient();
+
+        gradient.initGradient('#gradient-canvas');
+    </script>
+</body>
+</html>
