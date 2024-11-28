@@ -239,7 +239,7 @@ section {
 }
 
 .serrano {
-    gap: 20%;
+    gap: 5%;
 }
 
 .slide-1-2-content {
@@ -559,10 +559,6 @@ section {
     .slide-1-2-content h2 {
         font-size: 25px;
     }
-
-    .slide-1-2-content p {
-        font-size: 16px;
-    }
 }
 
 @media (max-width: 992px) {
@@ -582,10 +578,6 @@ section {
 
     .slide-1-2-content h2 {
         font-size: 22px;
-    }
-
-    .slide-1-2-content p {
-        font-size: 15px;
     }
 }
 
@@ -625,10 +617,6 @@ section {
         font-size: 28px;
     }
 
-    .slide-1-2-content p {
-        font-size: 18px;
-    }
-
     .footer-image {
         max-width: 40vw;
         height: auto;
@@ -649,14 +637,10 @@ section {
         font-size: 25px;
     }
 
-    .slide-1-2-content p {
-        font-size: 20px;
-    }
-
     .social-links i {
         width: 2rem;
         height: 2rem;
         font-size: 1rem;
         margin-right: 10px;
     }
-}
+}s
