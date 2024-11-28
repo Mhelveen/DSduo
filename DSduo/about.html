@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="aos.css" />
+    <link rel="stylesheet" href="styles.css">
+    <title>About us</title>
+    <link rel="icon" href="images/icon.png" type="image/png">
+</head>
+<body>
+    <canvas id="gradient-canvas" data-transition-in></canvas>
+
+    <nav>
+        <div class="nav-container">
+            <a class="logo" data-aos="zoom-in" data-aos-duration="500">
+                <img src="images/DSduo.png" alt="DSduo" style="width:50px"><span>DSduo</span>
+            </a>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200"><a href="work.html">Work</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"><a href="#section3">About us</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400"><a href="#section4">Contact</a></div>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="work.html">Work</a>
+                <a href="about.html">About us</a>
+                <a href="#section4">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about-us">
+        <div class="about-section">
+            <div class="about-text">
+                <h2 data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">Aspiring graphic designer and film editor</h2>
+            </div>
+        </div>
+        <div class="about-line" data-aos="zoom-in" data-aos-duration="500"></div>
+        <div class="container-about">
+            <div class="left-about">
+                <img src="images/dadizserrano.png" alt="DSduo" style="width:100%" data-aos="zoom-in" data-aos-duration="1000">
+            </div>
+            <div class="right-container">
+                <div class="right-about" id="top"> 
+                    <h2>01</h2>
+                    <div class="inside-line"></div>
+                    <p>Designing and creating visually stunning and aesthetically pleasing tailored to your needs.</p>
+                </div>
+                <div class="right-about" id="top">
+                    <h2>02</h2>
+                    <div class="inside-line"></div>
+                    <p>Editing video, transforming raw footage into engaging, professional visual content.</p>
+                </div>
+                <div class="right-about" id="bot">
+                    <h2>03</h2>
+                    <div class="inside-line"></div>
+                    <p>Layouting and organizing content cohesively to enhance readability and user engagement.</p>
+                </div>
+                <div class="right-about" id="bot">
+                    <h2>04</h2>
+                    <div class="inside-line"></div>
+                    <p>Managing and ensuring efficient project coordination and strategic planning for optimal results.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    <script src="aos.js"></script>
+    <script src="script.js"></script>
+    <script type="module">
+        import { Gradient } from './Gradient.js';
+
+        const gradient = new Gradient();
+
+        gradient.initGradient('#gradient-canvas');
+    </script>
+</body>
+</html>
