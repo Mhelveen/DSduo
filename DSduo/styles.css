@@ -5,10 +5,14 @@
     box-sizing: border-box;
 }
 
-html, body {
+html{
     height: 100%;
     margin: 0;
     scroll-behavior: smooth;
+}
+
+body {
+    background-color: #05253A;
 }
 
 /* BACKGROUND */
@@ -448,10 +452,9 @@ section {
 
 
 /* WORK */
-
 #work {
     background: transparent;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .work-section {
     display: flex;
@@ -500,32 +503,27 @@ section {
     margin: 8px 55px;
   }
   
-  /* Add padding BETWEEN each column (if you want) */
   .row,
   .row > .column {
     padding: 8px;
   }
-  
-  /* Create three equal columns that floats next to each other */
+
   .column {
     float: left;
-    width: 50%;
-    display: none; /* Hide columns by default */
+    width: 25%;
+    display: none;
   }
-  
-  /* Clear floats after rows */
+
   .row:after {
     content: "";
     display: table;
     clear: both;
   }
-  
-  /* The "show" class is added to the filtered elements */
+
   .show {
     display: block;
   }
 
-  /* Style the buttons */
   .btn {
     background: none;
     padding: 12px 40px;
@@ -536,12 +534,45 @@ section {
     cursor: pointer;
 }
 
-  
-  /* Add a grey background color on mouse-over */
   .btn:hover {
     background-color: #3a6862;
 }
   
+/* ABOUT US */
+#about-us {
+    background: transparent;
+    overflow: hidden;
+}
+.about-section {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100vw;
+    margin: -30px 10px 10px 10px;
+}
+
+.about-text {
+    max-width: 80%;
+    color: white;
+}
+
+.about-text h2 {
+    font-size: 5vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    padding: 3% 6%; 
+    text-align: left;
+}
+
+.about-line {
+    border-top: 2px solid white;
+    width: 90%;
+    margin: 5% auto 20px;
+    z-index: 5;
+}
+
+
+
 
 
 /* MEDIA QUERIES */
@@ -594,8 +625,6 @@ section {
 
 }
 
-
-/* Responsive Styles */
 @media (max-width: 1200px) {
     .image {
         max-width: 40vw;
@@ -705,8 +734,7 @@ section {
     }
   }
   
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .work-text h2 {
         font-size: 25px;
         padding-left: 65px;
@@ -726,6 +754,11 @@ section {
 
     .row {
         margin: 8px 5px;
+    }
+
+    .about-text h2 {
+        font-size: 25px;
+        padding-left: 65px;
     }
 
 }
