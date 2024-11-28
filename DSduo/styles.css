@@ -645,10 +645,11 @@ section {
     }
 
     .work-text h2 {
-        font-size: 25px;
+        font-size: 30px;
+        padding-left: 10px;
     }
     
     .work-text h3 {
-        font-size: 35px;
+        font-size: 30px;
     }
 }
