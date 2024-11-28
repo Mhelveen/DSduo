@@ -489,6 +489,13 @@ section {
     z-index: 5;
 }
 
+.out-line {
+    border-top: 2px solid white;
+    width: 90%;
+    margin: 2% auto -60px;
+    z-index: 5;
+}
+
 .row {
     margin: 8px 55px;
   }
@@ -535,9 +542,6 @@ section {
     background-color: #3a6862;
 }
   
-#navButtons {
-    display: none; /* Initially hidden */
-}
 
 
 /* MEDIA QUERIES */
@@ -693,15 +697,6 @@ section {
         font-size: 1rem;
         margin-right: 10px;
     }
-
-    .work-text h2 {
-        font-size: 30px;
-        padding-left: 50px;
-    }
-    
-    .work-text h3 {
-        font-size: 30px;
-    }
 }
 
 @media screen and (max-width: 900px) {
@@ -712,6 +707,14 @@ section {
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
+    .work-text h2 {
+        font-size: 25px;
+        padding-left: 65px;
+    }
+    
+    .work-text h3 {
+        font-size: 25px;
+    }
     .column {
       width: 100%;
     }
@@ -723,6 +726,6 @@ section {
 
     .row {
         margin: 8px 5px;
-      }
+    }
 
-  }
+}
