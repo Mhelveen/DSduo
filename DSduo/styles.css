@@ -458,7 +458,7 @@ section {
     align-items: center;
     height: 100%;
     width: 100vw;
-    margin: -20px 10px 10px 10px;
+    margin: -30px 10px 10px 10px;
 }
 
 .work-text {
@@ -485,8 +485,58 @@ section {
 .work-line {
     border-top: 2px solid white;
     width: 90%;
-    margin: -10px auto 20px;
+    margin: 2% auto 20px;
     z-index: 5;
+}
+
+.row {
+    margin: 8px 55px;
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    display: none; /* Hide columns by default */
+  }
+  
+  /* Clear floats after rows */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+
+  /* Style the buttons */
+  .btn {
+    background: none;
+    padding: 12px 40px;
+    border: 1px solid white;
+    margin: 10px 5px;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+  
+  /* Add a grey background color on mouse-over */
+  .btn:hover {
+    background-color: #3a6862;
+}
+  
+#navButtons {
+    display: none; /* Initially hidden */
 }
 
 
@@ -646,10 +696,23 @@ section {
 
     .work-text h2 {
         font-size: 30px;
-        padding-left: 2%;
+        padding-left: 50px;
     }
     
     .work-text h3 {
         font-size: 30px;
     }
 }
+
+@media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
