@@ -235,7 +235,11 @@ section {
 }
 
 .dadiz {
-    gap: 5%;
+    gap: 20%;
+}
+
+.serrano {
+    gap: 20%;
 }
 
 .slide-1-2-content {
@@ -596,6 +600,14 @@ section {
         margin-top: -30%;
     }
 
+    .dadiz {
+        gap: 5%;
+    }
+    
+    .serrano {
+        gap: 5%;
+    }
+
     .dadiz img {
         width: 90%;
     }
@@ -606,15 +618,15 @@ section {
     }
 
     .slide-1-2-content h1 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .slide-1-2-content h2 {
-        font-size: 20px;
+        font-size: 28px;
     }
 
     .slide-1-2-content p {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .footer-image {
@@ -630,15 +642,15 @@ section {
 
 @media (max-width: 576px) {
     .slide-1-2-content h1 {
-        font-size: 25px;
+        font-size: 40px;
     }
 
     .slide-1-2-content h2 {
-        font-size: 18px;
+        font-size: 25px;
     }
 
     .slide-1-2-content p {
-        font-size: 13px;
+        font-size: 20px;
     }
 
     .social-links i {
