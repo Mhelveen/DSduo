@@ -240,11 +240,11 @@ section {
 }
 
 .dadiz {
-    gap: 20%;
+    gap: 15%;
 }
 
 .serrano {
-    gap: 5%;
+    gap: 3%;
 }
 
 .slide-1-2-content {
@@ -568,7 +568,7 @@ section {
 .about-line {
     border-top: 2px solid white;
     width: 90%;
-    margin: 5% auto 20px;
+    margin: 2% auto -5%;
     z-index: 5;
 }
 
@@ -578,9 +578,11 @@ section {
     gap: 20px; /* Spacing between sections */
     padding: 5% 5% 0 5%;
 }
+
 .left-about {
     padding: 20px;
 }
+
 .right-about {
     padding: 100px 40px;
     text-align: left;
@@ -619,6 +621,110 @@ section {
     grid-template-columns: repeat(2, 1fr); /* 2 columns for right sections */
     gap: 20px; /* Spacing between right sections */
 }
+
+.sceptre {
+    display: flex;
+    flex-wrap: wrap;
+    padding: -5% 5% 0 5%;
+}
+
+.image-sceptre {
+    flex: 1; /* Takes up 1 part of the available space */
+    min-width: 300px; /* Minimum width for responsiveness */
+}
+
+.image-sceptre img {
+    width: 60%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+.text-sceptre {
+    flex: 1; /* Takes up 1 part of the available space */
+    min-width: 300px; /* Minimum width for responsiveness */
+    padding: 12% 10px;
+    text-align: left;
+    color: #dfdcbe;
+}
+
+.text-sceptre h2 {
+    font-size: 70px;
+    color: white;
+}
+
+.text-sceptre ul {
+    padding: 0 20% 0 20px;
+}
+
+.text-sceptre li {
+    padding-bottom: 20px;
+}
+
+.text-sceptre1 {
+    flex: 1; /* Takes up 1 part of the available space */
+    min-width: 300px; /* Minimum width for responsiveness */
+    padding: 8% 0 0 15%;
+    text-align: left;
+    color: #dfdcbe;
+}
+
+.text-sceptre1 h2 {
+    font-size: 70px;
+    color: white;
+}
+
+.text-sceptre1 ul {
+    padding: 0 15% 0 20px;
+}
+
+.text-sceptre1 li {
+    padding-bottom: 20px;
+}
+
+.sceptre-line {
+    border-top: 2px solid #dfdcbe;
+    width: 20%;
+    margin: 3% 0;
+    z-index: 5;
+}
+
+.last-line {
+    border-top: 2px solid white;
+    width: 90%;
+    margin: 2% auto -50px;
+    z-index: 5;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .sceptre {
+        flex-direction: column; /* Stack sections on smaller screens */
+    }
+
+    .john {
+        flex-direction: column-reverse;
+    }
+
+    .text-sceptre {
+        padding: 5% 0 0 15%;
+    }
+
+    .text-sceptre1 {
+        padding-bottom: 15%;
+    }
+
+    .last-line {
+        margin-top: 15%;
+    }
+
+    .about-section {
+        padding: 0;
+    }
+}
+
 @media (max-width: 768px) {
     .container-about {
         grid-template-columns: 1fr; /* Stack sections on smaller screens */
@@ -813,11 +919,6 @@ section {
 
     .row {
         margin: 8px 5px;
-    }
-
-    .about-text h2 {
-        font-size: 25px;
-        padding-left: 65px;
     }
 
 }
